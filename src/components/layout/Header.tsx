@@ -4,12 +4,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import {
-  IconBrandYoutube,
   IconBrandYoutubeFilled,
-  IconMail,
   IconMailFilled,
   IconMenu,
-  IconPhone,
   IconX,
 } from '@tabler/icons-react';
 import { useState } from 'react';
@@ -25,10 +22,12 @@ const NAV_LINKS = [
     url: '/',
   },
   { id: 'about-me', name: 'About Me', url: '/about-me' },
-  { id: 'my-hobbies', name: 'My Hobbies', url: '/my-hobbies' },
-  { id: 'achievements', name: 'Achievements', url: '/achievements' },
-  { id: 'personal-projects', name: 'Personal Projects', url: '/personal-projects' },
-  { id: 'social-activities', name: 'Social Activities', url: '/social-activities' },
+  { id: 'education', name: 'Education', url: '/education' },
+  {
+    id: 'extracurricular-activities',
+    name: 'Extracurricular Activities',
+    url: '/extracurricular-activities',
+  },
 ];
 
 const Header = () => {
@@ -38,16 +37,13 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full bg-bg sticky top-0 left-0 z-50 relative">
+      <header className="w-full bg-bg sticky top-0 left-0 z-50">
         <div className="hidden fluid-container md:flex items-center justify-between">
           <div className="w-1/5 flex gap-2 items-center"></div>
           <div className="w-3/5 text-center">
             <h1 className="font-heading text-[40px] font-semibold">
-              NGUYEN CAO THIEN AN
+              PHAM NGUYEN HOANG QUAN
             </h1>
-            <p className="text-base italic text-gray-700 font-light">
-              &quot;Life is but a breeze, so make the most of it&quot;
-            </p>
             <div className="flex items-center justify-center gap-5">
               {NAV_LINKS.map((navLink) => (
                 <Link

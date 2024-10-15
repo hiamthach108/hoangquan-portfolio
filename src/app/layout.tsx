@@ -10,8 +10,8 @@ import '@/styles/globals.css';
 const inter = Source_Serif_4({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Nguyen Cao Thien An',
-  description: 'Nguyen Cao Thien An. Life is but a breeze, so make the most of it',
+  title: 'Pham Nguyen Hoang Quan',
+  description: 'Pham Nguyen Hoang Quan. Life is but a breeze, so make the most of it',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

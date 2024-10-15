@@ -10,7 +10,7 @@ import { APP_NAME } from '@/config/constants/env.const';
 
 export const metadata: Metadata = {
   title: `About Me | ${APP_NAME}`,
-  description: 'Nguyen Cao Thien An. Life is but a breeze, so make the most of it',
+  description: 'Pham Nguyen Hoang Quan. Life is but a breeze, so make the most of it',
 };
 
 const page = () => {

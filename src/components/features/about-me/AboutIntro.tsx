@@ -14,7 +14,7 @@ const AboutIntro = () => {
               src={'/thienan.jpg'}
               width={800}
               height={600}
-              alt="Nguyen Cao Thien An"
+              alt="Pham Nguyen Hoang Quan"
               className="w-full h-auto object-center object-cover"
             />
           </AnimFade>
