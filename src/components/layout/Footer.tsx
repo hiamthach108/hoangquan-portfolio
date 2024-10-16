@@ -7,7 +7,7 @@ import { EMAIL, PHONE } from '@/config/constants/social.const';
 const Footer = () => {
   return (
     <footer className="text-center py-10 bg-gray-200">
-      <h1 className="font-heading text-3xl font-semibold">NGUYEN CAO THIEN AN</h1>
+      <h1 className="font-heading text-3xl font-semibold">PHAM NGUYEN HOANG QUAN</h1>
       <Link href={`mailto:${EMAIL}`} className=" text-primary my-2 block">
         {EMAIL}
       </Link>

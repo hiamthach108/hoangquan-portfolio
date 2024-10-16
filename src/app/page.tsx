@@ -1,11 +1,11 @@
+import HomeActivities from '@/components/features/home/HomeActivities';
 import HomeHero from '@/components/features/home/HomeHero';
-import HomeProject from '@/components/features/home/HomeProject';
 
 export default function Home() {
   return (
     <div className="w-full overflow-hidden">
       <HomeHero />
-      <HomeProject />
+      <HomeActivities />
     </div>
   );
 }

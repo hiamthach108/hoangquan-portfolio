@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import {
-  IconBrandYoutubeFilled,
+  // IconBrandYoutubeFilled,
   IconMailFilled,
   IconMenu,
   IconX,
@@ -66,7 +66,7 @@ const Header = () => {
         <div className="flex justify-between md:hidden p-3">
           <Link href={'/'} className="no-underline">
             <h2 className="font-heading text-xl font-semibold  text-black">
-              NGUYEN CAO THIEN AN
+              PHAM NGUYEN HOANG QUAN
             </h2>
           </Link>
 
@@ -85,12 +85,12 @@ const Header = () => {
               className="cursor-pointer text-primary hover:text-bg-sky"
             />
           </Link>
-          <Link href={YOUTUBE} target="_blank">
+          {/* <Link href={YOUTUBE} target="_blank">
             <IconBrandYoutubeFilled
               size={28}
               className="cursor-pointer text-primary hover:text-bg-sky"
             />
-          </Link>
+          </Link> */}
         </div>
       </header>
 

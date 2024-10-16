@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import React from 'react';
 
 import AboutGoal from '@/components/features/about-me/AboutGoal';
-import AboutIntro from '@/components/features/about-me/AboutIntro';
+import AboutHobbies from '@/components/features/about-me/AboutHobbies';
 import AboutWelcome from '@/components/features/about-me/AboutWelcome';
 
 import { APP_NAME } from '@/config/constants/env.const';
@@ -17,7 +17,7 @@ const page = () => {
   return (
     <div className="min-h-screen w-full overflow-hidden">
       <AboutWelcome />
-      <AboutIntro />
+      <AboutHobbies />
       <AboutGoal />
     </div>
   );
