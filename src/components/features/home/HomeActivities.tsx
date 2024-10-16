@@ -10,7 +10,7 @@ const list = [
     title: 'Foody Buddy',
     position: 'Founder, President',
     imgList: [
-      '/remarkable-activities/foody-buddy/buonmethuot.jpg',
+      '/remarkable-activities/foody-buddy/buonmethuot1.jpg',
       '/remarkable-activities/foody-buddy/dongnai.jpg',
       '/remarkable-activities/foody-buddy/hcmc.jpg',
     ],

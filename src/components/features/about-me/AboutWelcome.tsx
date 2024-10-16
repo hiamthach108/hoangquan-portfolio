@@ -41,7 +41,7 @@ const AboutWelcome = () => {
           </div>
         </div>
 
-        <AnimFade direction="right" className="w-full md:w-[40%]">
+        <AnimFade direction="right" className="w-full md:w-[44%]">
           <Image
             src={'/hoangquan.jpg'}
             width={800}
