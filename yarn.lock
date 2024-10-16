@@ -2039,17 +2039,19 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
     eslint "8.46.0"
     eslint-config-next "^14.2.14"
     framer-motion "^11.11.1"
-    hoangquan-portfolio "file:C:/Users/lengo/AppData/Local/Yarn/Cache/v6/npm-hoangquan-portfolio-0.1.0-694ea656-68d9-4a89-84bf-85381c93efb2-1728923922861/node_modules/hoangquan-portfolio"
+    hoangquan-portfolio "file:C:/Users/lengo/AppData/Local/Yarn/Cache/v6/npm-hoangquan-portfolio-0.1.0-703256b9-70f9-4bfd-9ffe-fc490ebcfe6e-1729097760027/node_modules/hoangquan-portfolio"
     next "^14.2.14"
     postcss "8.4.27"
     react "^18.3.1"
     react-dom "^18.3.1"
+    react-grid-gallery "^1.0.1"
     react-hot-toast "^2.4.1"
     swiper "^11.1.14"
     tailwind-merge "^2.5.3"
     tailwindcss "3.3.3"
     tailwindcss-animate "^1.0.7"
     typescript "5.1.6"
+    usehooks-ts "^3.1.0"
 
 hoist-non-react-statics@^3.3.1:
   version "3.3.2"
@@ -2504,6 +2506,11 @@ locate-path@^6.0.0:
   integrity sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==
   dependencies:
     p-locate "^5.0.0"
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
 
 lodash.merge@^4.6.2:
   version "4.6.2"
@@ -3003,6 +3010,11 @@ react-dom@^18.3.1:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
+
+react-grid-gallery@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-grid-gallery/-/react-grid-gallery-1.0.1.tgz#51e9e920cb83df6c61fbd1f2c7eed7db3b6e5a1b"
+  integrity sha512-+fVd6fH9tm0W+UMgzRHET/gmzSs2/l2sGOuELLaHXMto6UhuZdscj9ILHOYe7hn0GBRUJiczMllsEs7OJz9uPA==
 
 react-hot-toast@^2.4.1:
   version "2.4.1"
@@ -3648,6 +3660,13 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+usehooks-ts@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-3.1.0.tgz#156119f36efc85f1b1952616c02580f140950eca"
+  integrity sha512-bBIa7yUyPhE1BCc0GmR96VU/15l/9gP1Ch5mYdLcFBaFGQsdmXkvjV0TtOqW1yUd6VjIwDunm+flSciCQXujiw==
+  dependencies:
+    lodash.debounce "^4.0.8"
 
 util-deprecate@^1.0.2:
   version "1.0.2"
