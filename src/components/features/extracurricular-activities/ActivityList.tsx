@@ -4,48 +4,6 @@ import React from 'react';
 
 import ImgCarousel from '@/components/shared/ImgCarousel';
 
-import AnimFade from '../animation/AnimFade';
-
-import clsx from 'clsx';
-
-const list: {
-  id: number;
-  title: string;
-  content: string[];
-  images?: string[];
-}[] = [
-  {
-    id: 1,
-    title: 'Foody Buddy',
-    content: [],
-    images: [],
-  },
-  {
-    id: 2,
-    title: 'Mid-Autumn Festival',
-    content: [],
-    images: [],
-  },
-  {
-    id: 3,
-    title: 'Music Do Wonder Charity',
-    content: [],
-    images: [],
-  },
-  {
-    id: 4,
-    title: 'Panacea',
-    content: [],
-    images: [],
-  },
-  {
-    id: 5,
-    title: 'Tet Gathering',
-    content: [],
-    images: [],
-  },
-];
-
 const ActivityList = () => {
   return (
     <div className="w-full py-12">

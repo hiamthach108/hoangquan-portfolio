@@ -4,14 +4,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import {
-  // IconBrandYoutubeFilled,
+  IconBrandFacebookFilled, // IconBrandYoutubeFilled,
   IconMailFilled,
   IconMenu,
   IconX,
 } from '@tabler/icons-react';
 import { useState } from 'react';
 
-import { EMAIL, YOUTUBE } from '@/config/constants/social.const';
+import { EMAIL, FACEBOOK } from '@/config/constants/social.const';
 
 import AnimSlide from '../features/animation/AnimSlide';
 
@@ -82,15 +82,15 @@ const Header = () => {
           <Link href={`mailto:${EMAIL}`} target="_blank">
             <IconMailFilled
               size={28}
-              className="cursor-pointer text-primary hover:text-bg-sky"
+              className="cursor-pointer text-primary hover:text-secondary"
             />
           </Link>
-          {/* <Link href={YOUTUBE} target="_blank">
-            <IconBrandYoutubeFilled
+          <Link href={FACEBOOK} target="_blank">
+            <IconBrandFacebookFilled
               size={28}
-              className="cursor-pointer text-primary hover:text-bg-sky"
+              className="cursor-pointer text-primary hover:text-secondary"
             />
-          </Link> */}
+          </Link>
         </div>
       </header>
 

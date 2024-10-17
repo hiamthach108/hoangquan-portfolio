@@ -45,7 +45,7 @@ const list = [
 
 const HomeActivities = () => {
   return (
-    <div className="py-10 md:py-20">
+    <div className="py-10 md:py-20 bg-light-brown">
       <h3 className="section-heading text-center">Remarkable Activities</h3>
       <div className="mt-12">
         <MyCarousel

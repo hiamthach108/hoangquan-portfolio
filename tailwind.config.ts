@@ -21,9 +21,12 @@ const config: Config = {
       },
       colors: {
         'background': '#4f95f7',
-        'primary': '#4f95f7',
-        'bg': '#F1FAFB',
-        'bg-sky': '#9DC6FF',
+        'primary': '#2b6b75',
+        'secondary': '#90c3be',
+        'light-brown': '#faded3',
+        'brown': '#90c3be',
+        'bg': '#fffbeb',
+        'bg-sky': '#eef6f9',
       },
       fontFamily: {
         sans: ['Source Serif 4', 'serif'],

@@ -6,7 +6,7 @@ import AnimFade from '../animation/AnimFade';
 
 const HomeHero = () => {
   return (
-    <div className="bg-white py-10">
+    <div className="py-10">
       <div className="fluid-container flex items-center 2xl:max-w-[1640px] 2xl:pr-11 overflow-hidden ">
         <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-8 max-md:px-3">
           <AnimFade direction="left" className="md:w-[40%]">

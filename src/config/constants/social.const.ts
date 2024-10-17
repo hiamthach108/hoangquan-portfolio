@@ -1,3 +1,3 @@
-export const EMAIL = 'nguyenbinhkhiembienhoa@gmail.com';
-export const PHONE = '+84 252 203 668';
-export const YOUTUBE = 'https://www.youtube.com/@thienan937';
+export const EMAIL = 'quan.pnh532007@gmail.com';
+export const PHONE = '+84-81-450-8371';
+export const FACEBOOK = 'https://www.facebook.com/profile.php?id=100069656048767 ';

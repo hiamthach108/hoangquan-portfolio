@@ -2,7 +2,9 @@ import { Metadata } from 'next';
 
 import React from 'react';
 
-// import AchievementList from '@/components/features/education/AchievementList';
+import AchievementList from '@/components/features/education/AchievementList';
+import EducationList from '@/components/features/education/EducationList';
+
 import { APP_NAME } from '@/config/constants/env.const';
 
 export const metadata: Metadata = {
@@ -14,7 +16,8 @@ const page = () => {
   return (
     <div className="min-h-screen text-center overflow-hidden">
       <h1 className="section-heading-hand">Education</h1>
-      {/* <AchievementList /> */}
+      <EducationList />
+      <AchievementList />
     </div>
   );
 };

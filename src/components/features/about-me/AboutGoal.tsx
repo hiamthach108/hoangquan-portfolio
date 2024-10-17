@@ -4,7 +4,7 @@ import AnimFade from '../animation/AnimFade';
 
 const AboutGoal = () => {
   return (
-    <div className="w-full py-10 md:py-16">
+    <div className="w-full py-10 md:py-16 bg-light-brown">
       <AnimFade direction="up" className="text-center">
         <h1 className="section-heading mb-3 md:mb-6 text-center">
           The Future I Hope For
