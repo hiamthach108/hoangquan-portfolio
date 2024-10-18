@@ -43,32 +43,13 @@ const ActivityList = () => {
         <div className="fluid-container">
           <h3 className="section-heading text-center">Music Do Wonder Charity</h3>
 
-          <div className="flex gap-6 mt-6 w-full">
-            <div className="flex-1 flex">
-              <Image
-                src="/extracurricular-activities/music-do-wonder/1.JPG"
-                alt="Music Do Wonder Charity"
-                width={300}
-                height={400}
-                className="w-1/2 h-auto object-center object-cover"
+          <div className="flex gap-6 mt-6 w-full max-w-4xl mx-auto justify-center">
+            <video controls>
+              <source
+                src="https://storage.googleapis.com/staging.thach-personal.appspot.com/music-do-wonder-charity.mp4"
+                type="video/mp4"
               />
-              <Image
-                src="/extracurricular-activities/music-do-wonder/2.JPG"
-                alt="Music Do Wonder Charity"
-                width={300}
-                height={400}
-                className="w-1/2 h-auto object-center object-cover"
-              />
-            </div>
-            <div className="relative w-1/2 h-[400px]">
-              {/* <iframe
-                src="https://player.vimeo.com/video/1020391518?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Music Do Wonder Charity"
-                className="w-full h-full absolute top-0 left-0"
-              ></iframe> */}
-            </div>
+            </video>
           </div>
         </div>
       </div>
@@ -84,7 +65,7 @@ const ActivityList = () => {
                 alt="Panacea"
                 width={400}
                 height={400}
-                className="w-full h-auto object-center object-cover"
+                className="w-full h-auto object-center object-cover aspect-square"
               />
             </div>
             <div className="flex-1">
@@ -93,7 +74,7 @@ const ActivityList = () => {
                 alt="Panacea"
                 width={400}
                 height={400}
-                className="w-full h-auto object-center object-cover"
+                className="w-full h-auto object-center object-cover aspect-square"
               />
             </div>
           </div>
@@ -101,21 +82,25 @@ const ActivityList = () => {
         <div className="flex-1">
           <h3 className="section-heading text-center">Tet Gathering</h3>
 
-          <div className="w-full flex-1 gap-2 mt-4">
-            <Image
-              src="/extracurricular-activities/tet-gathering/1.HEIC"
-              alt="Tet Gathering"
-              width={300}
-              height={400}
-              className="w-1/2 h-auto object-center object-cover"
-            />
-            <Image
-              src="/extracurricular-activities/tet-gathering/2.HEIC"
-              alt="Tet Gathering"
-              width={300}
-              height={400}
-              className="w-1/2 h-auto object-center object-cover"
-            />
+          <div className="w-full flex-1 flex gap-2 mt-4">
+            <div className="flex-1">
+              <Image
+                src="/extracurricular-activities/tet-gathering/1.webp"
+                alt="Tet Gathering"
+                width={400}
+                height={400}
+                className="w-full h-auto object-center object-cover aspect-square"
+              />
+            </div>
+            <div className="flex-1">
+              <Image
+                src="/extracurricular-activities/tet-gathering/2.webp"
+                alt="Tet Gathering"
+                width={400}
+                height={400}
+                className="w-full h-auto object-center object-cover aspect-square"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -2039,7 +2039,7 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
     eslint "8.46.0"
     eslint-config-next "^14.2.14"
     framer-motion "^11.11.1"
-    hoangquan-portfolio "file:C:/Users/lengo/AppData/Local/Yarn/Cache/v6/npm-hoangquan-portfolio-0.1.0-703256b9-70f9-4bfd-9ffe-fc490ebcfe6e-1729097760027/node_modules/hoangquan-portfolio"
+    hoangquan-portfolio "file:C:/Users/lengo/AppData/Local/Yarn/Cache/v6/npm-hoangquan-portfolio-0.1.0-ca65fb3e-a9cb-4d88-af92-759cb1af9f3d-1729206794566/node_modules/hoangquan-portfolio"
     next "^14.2.14"
     postcss "8.4.27"
     react "^18.3.1"
@@ -3772,6 +3772,11 @@ yaml@^2.3.4:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.6.0.tgz#14059ad9d0b1680d0f04d3a60fe00f3a857303c3"
   integrity sha512-a6ae//JvKDEra2kdi1qzCyrJW/WZCgFi8ydDV+eXExl95t+5R+ijnqHJbz9tmMh8FUjx3iv2fCQ4dclAQlO2UQ==
+
+yet-another-react-lightbox@^3.21.6:
+  version "3.21.6"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-3.21.6.tgz#da37cf8be3401e810810fa06f30c0a1f32067bf1"
+  integrity sha512-uKcRmmezsj1Fbj38B6hFOGwbAu94fPr8d5H6I0+1FmcToX56freEGXXXtdA1oRo6036ug+UgrKZzzvsw/MIM/w==
 
 yocto-queue@^0.1.0:
   version "0.1.0"

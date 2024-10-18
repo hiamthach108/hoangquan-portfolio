@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Gallery, Image } from 'react-grid-gallery';
+import Lightbox from 'yet-another-react-lightbox';
 
 import { useWindowSize } from 'usehooks-ts';
 
@@ -8,6 +9,9 @@ interface Props {
 }
 
 const ImgGallery = ({ images }: Props) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(0);
+
   const screen = useWindowSize();
   const renderRowHeight = () => {
     if (screen.width < 768) {
@@ -27,7 +31,21 @@ const ImgGallery = ({ images }: Props) => {
         enableImageSelection={false}
         images={images}
         rowHeight={renderRowHeight()}
+        onClick={(index) => {
+          setSelectedImage(index);
+          setLightboxOpen(true);
+        }}
       ></Gallery>
+
+      <Lightbox
+        open={lightboxOpen}
+        slides={images.map((image) => ({
+          src: image.src,
+          caption: image.caption,
+        }))}
+        index={selectedImage}
+        close={() => setLightboxOpen(false)}
+      />
     </>
   );
 };
