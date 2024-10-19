@@ -24,7 +24,7 @@ const config: Config = {
         'primary': '#2b6b75',
         'secondary': '#90c3be',
         'light-brown': '#faded3',
-        'brown': '#90c3be',
+        'brown': '#d8987d',
         'bg': '#fffbeb',
         'bg-sky': '#eef6f9',
       },

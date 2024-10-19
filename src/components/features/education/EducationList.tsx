@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 import React from 'react';
 
+import AnimFade from '../animation/AnimFade';
+
 const educationList = [
   {
     id: 1,
@@ -39,7 +41,11 @@ const AchievementList = () => {
     <div className="p-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
         {educationList.map((e) => (
-          <div className="w-full" key={e.id}>
+          <AnimFade
+            direction={e.id % 2 === 0 ? 'right' : 'left'}
+            className="w-full"
+            key={e.id}
+          >
             <div className="flex gap-5 flex-col md:flex-row">
               <Image
                 src={e.logo}
@@ -80,10 +86,13 @@ const AchievementList = () => {
               ))}
             </div>
             <div className="w-full bg-black h-[1px] mt-6"></div>
-          </div>
+          </AnimFade>
         ))}
 
-        <div className="col-span-1 md:col-span-2 text-center w-full max-w-xl mx-auto">
+        <AnimFade
+          direction="up"
+          className="col-span-1 md:col-span-2 text-center w-full max-w-xl mx-auto"
+        >
           <div className="w-full bg-black h-[1px] mt-6"></div>
           <h5 className="font-heading text-2xl my-3">CERTIFICATES</h5>
           <div className="flex items-center justify-center gap-4">
@@ -98,7 +107,7 @@ const AchievementList = () => {
             </span>
           </div>
           <div className="w-full bg-black h-[0.5px] mt-6"></div>
-        </div>
+        </AnimFade>
       </div>
     </div>
   );

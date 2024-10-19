@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import React from 'react';
+
+import { RESUME } from '@/config/constants/social.const';
 
 import AnimFade from '../animation/AnimFade';
 
@@ -47,6 +50,13 @@ const HomeHero = () => {
                 Whether you’re just browsing or truly eager to explore, I’m delighted to
                 have you here with me!
               </p>
+              <Link
+                href={RESUME}
+                target="_blank"
+                className="text-brown font-heading text-xl "
+              >
+                RESUME
+              </Link>
             </AnimFade>
           </div>
         </div>

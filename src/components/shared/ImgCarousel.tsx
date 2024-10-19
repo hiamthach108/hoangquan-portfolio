@@ -5,6 +5,8 @@ import Image from 'next/image';
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 
+import { EffectCoverflow } from 'swiper/modules';
+
 interface Props {
   images: string[];
 }
@@ -30,18 +32,16 @@ const ImgCarousel = ({ images }: Props) => {
     <div className="w-full relative">
       <Swiper
         ref={swiperRef}
-        slidesPerView={1.2}
-        spaceBetween={10}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3.3,
-            spaceBetween: 20,
-          },
+        slidesPerView={3.2}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
         }}
+        modules={[EffectCoverflow]}
+        effect="coverflow"
+        grabCursor={true}
         loop={true}
         autoplay={{
           delay: 1000,
@@ -52,18 +52,22 @@ const ImgCarousel = ({ images }: Props) => {
         onSlideChange={({ realIndex }) => setCurrent(realIndex)}
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} className="relative w-full h-auto aspect-square">
+          <SwiperSlide
+            key={index}
+            className="relative w-fit h-fit rounded-lg overflow-hidden"
+          >
             <Image
               src={image}
               alt=""
-              className="w-full h-72 object-cover object-center"
-              fill={true}
+              width={300}
+              height={300}
+              className="w-full h-auto object-cover object-center aspect-square rounded-[10px]"
             />
           </SwiperSlide>
         ))}
 
         <div
-          className="max-md:hidden absolute left-6 top-1/2 transform -translate-y-1/2 z-10 bg-bg-sky aspect-square w-[60px] rounded-full flex items-center justify-center cursor-pointer"
+          className="max-md:hidden absolute left-6 top-1/2 transform -translate-y-1/2 z-10 bg-light-brown aspect-square w-[60px] rounded-full flex items-center justify-center cursor-pointer"
           onClick={handlePrevSlide}
         >
           <Image
@@ -75,7 +79,7 @@ const ImgCarousel = ({ images }: Props) => {
           />
         </div>
         <div
-          className="max-md:hidden absolute right-6 top-1/2 transform -translate-y-1/2 z-10 bg-bg-sky aspect-square w-[60px] rounded-full flex items-center justify-center cursor-pointer"
+          className="max-md:hidden absolute right-6 top-1/2 transform -translate-y-1/2 z-10 bg-light-brown aspect-square w-[60px] rounded-full flex items-center justify-center cursor-pointer"
           onClick={handleNextSlide}
         >
           <Image

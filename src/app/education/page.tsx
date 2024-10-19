@@ -4,6 +4,7 @@ import React from 'react';
 
 import AchievementList from '@/components/features/education/AchievementList';
 import EducationList from '@/components/features/education/EducationList';
+import Internship from '@/components/features/education/Internship';
 
 import { APP_NAME } from '@/config/constants/env.const';
 
@@ -18,6 +19,7 @@ const page = () => {
       <h1 className="section-heading-hand">Education</h1>
       <EducationList />
       <AchievementList />
+      <Internship />
     </div>
   );
 };
