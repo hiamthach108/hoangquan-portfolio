@@ -94,11 +94,8 @@ const AchievementList = () => {
           className="col-span-1 md:col-span-2 text-center w-full max-w-xl mx-auto"
         >
           <div className="w-full bg-black h-[1px] mt-6"></div>
-          <h5 className="font-heading text-2xl my-3">CERTIFICATES</h5>
+          <h5 className="font-heading text-2xl my-3">SCORES</h5>
           <div className="flex items-center justify-center gap-4">
-            <span>
-              SAT: <b>1450</b>
-            </span>{' '}
             <span>
               IELTS: <b>7.5</b>
             </span>

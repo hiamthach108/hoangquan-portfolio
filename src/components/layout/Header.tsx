@@ -37,30 +37,22 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full bg-bg sticky top-0 left-0 z-50">
+      <header className="w-full bg-bg fixed top-0 left-0 z-50 bg-opacity-40 backdrop-blur-sm">
         <div className="hidden fluid-container md:flex items-center justify-between">
-          <div className="w-1/5 flex gap-2 items-center"></div>
-          <div className="w-3/5 text-center">
-            <h1 className="font-heading text-[40px] font-semibold">
-              PHAM NGUYEN HOANG QUAN
-            </h1>
-            <div className="flex items-center justify-center gap-5">
-              {NAV_LINKS.map((navLink) => (
-                <Link
-                  key={navLink.url}
-                  href={navLink.url}
-                  className="no-underline text-gray-800 mt-4 font-normal text-lg whitespace-nowrap"
-                >
-                  {navLink.name}
+          <h1 className="font-heading text-3xl font-semibold">PHAM NGUYEN HOANG QUAN</h1>
+          <div className="flex items-center justify-center gap-5">
+            {NAV_LINKS.map((navLink) => (
+              <Link
+                key={navLink.url}
+                href={navLink.url}
+                className="no-underline text-gray-800 font-normal text-lg whitespace-nowrap"
+              >
+                {navLink.name}
 
-                  {pathname === navLink.url && (
-                    <div className="h-[1px] w-full bg-black" />
-                  )}
-                </Link>
-              ))}
-            </div>
+                {pathname === navLink.url && <div className="h-[1px] w-full bg-black" />}
+              </Link>
+            ))}
           </div>
-          <div className="w-1/5 "></div>
         </div>
 
         <div className="flex justify-between md:hidden p-3">
@@ -79,7 +71,7 @@ const Header = () => {
           />
         </div>
         <div className="absolute top-6 right-6 z-10 flex items-start justify-end gap-2 w-fit h-auto max-md:hidden ">
-          <Link href={`mailto:${EMAIL}`} target="_blank">
+          {/* <Link href={`mailto:${EMAIL}`} target="_blank">
             <IconMailFilled
               size={28}
               className="cursor-pointer text-primary hover:text-secondary"
@@ -90,7 +82,7 @@ const Header = () => {
               size={28}
               className="cursor-pointer text-primary hover:text-secondary"
             />
-          </Link>
+          </Link> */}
         </div>
       </header>
 

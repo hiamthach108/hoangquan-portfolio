@@ -50,9 +50,9 @@ const list = [
 
 const Internship = () => {
   return (
-    <div className="py-10 fluid-container">
+    <div className="py-10 bg-white">
       <h2 className="text-center section-heading">INTERNSHIP</h2>
-      <div className="grid grid-cols-2 gap-6 mt-6">
+      <div className="fluid-container grid grid-cols-2 gap-6 mt-6">
         {list.map((item, index) => (
           <AnimFade
             direction={index % 2 === 0 ? 'left' : 'right'}
@@ -71,14 +71,6 @@ const Internship = () => {
                 </li>
               ))}
             </ul>
-            <Link
-              href={item.link}
-              target="_blank"
-              rel="noreferrer"
-              className="text-primary underline block mt-3"
-            >
-              Certificate
-            </Link>
           </AnimFade>
         ))}
       </div>

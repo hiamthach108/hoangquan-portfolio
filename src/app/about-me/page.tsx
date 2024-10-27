@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="min-h-screen w-full overflow-hidden">
+    <div className="min-h-screen w-full overflow-hidden page-container">
       <AboutWelcome />
       <AboutHobbies />
       <AboutGoal />
