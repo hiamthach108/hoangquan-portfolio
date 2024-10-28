@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 import React from 'react';
 
-import { RESUME } from '@/config/constants/social.const';
+import Btn from '@/components/shared/Btn/Btn';
 
+// import { RESUME } from '@/config/constants/social.const';
 import AnimFade from '../animation/AnimFade';
 import AnimText from '../animation/AnimText';
 
@@ -23,12 +24,12 @@ const HomeHero = () => {
           <div className="flex-1">
             <AnimText
               text="PHAM NGUYEN HOANG QUAN"
-              className="max-[350px]:text-4xl text-5xl lg:text-5xl text-white font-heading tracking-wider"
+              className="max-[350px]:text-2xl text-3xl lg:text-5xl text-white font-heading tracking-wider"
             ></AnimText>
 
             <AnimFade
               direction="right"
-              className="list-none text-white max-w-3xl flex flex-col gap-2 text-justify mt-4"
+              className="list-none text-white lg:max-w-[60%] flex flex-col gap-2 text-justify mt-4 text-sm md:text-base"
               delay={0.1}
             >
               <p>
@@ -48,10 +49,16 @@ const HomeHero = () => {
                 have you here with me!
               </p>
             </AnimFade>
+
+            <AnimFade direction="up" className="">
+              <Link href={'/about-me'}>
+                <Btn className="mt-6">About Me</Btn>
+              </Link>
+            </AnimFade>
           </div>
         </div>
       </div>
-      <div className="overlay z-10 bg-black bg-opacity-20 w-full h-full absolute left-0 right-0 top-0"></div>
+      <div className="overlay z-10 bg-black bg-opacity-40 w-full h-full absolute left-0 right-0 top-0"></div>
     </div>
   );
 };

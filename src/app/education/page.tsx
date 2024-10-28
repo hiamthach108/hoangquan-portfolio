@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="min-h-screen text-center overflow-hidden page-container">
+    <div className="min-h-screen text-center overflow-hidden page-container pb-0">
       <h1 className="section-heading-hand">Education</h1>
       <EducationList />
       <AchievementList />

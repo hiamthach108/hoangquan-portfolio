@@ -204,9 +204,9 @@ const ActivityList = () => {
           </div>
         </div>
       </div> */}
-      <div className="fluid-container flex flex-col gap-10">
+      <div className="mx-auto max-w-[90vw] flex flex-col gap-10">
         {list.map((item) => (
-          <div className="flex items-center gap-10" key={item.id}>
+          <div className="flex flex-col md:flex-row items-center gap-10" key={item.id}>
             <div className="flex flex-col gap-2 flex-1">
               <h3 className="text-xl text-primary font-heading text-left">
                 {item.title}
@@ -228,14 +228,14 @@ const ActivityList = () => {
               ))}
             </div>
             {item.imgList && (
-              <div className="w-[40%]">
+              <div className="w-full md:w-[40%]">
                 <ImgCarousel images={item.imgList} />
               </div>
             )}
 
             {item.video && (
-              <div className="w-[40%]">
-                <video controls className="w-full">
+              <div className="w-full md:w-[40%]">
+                <video controls className="w-full rounded-img">
                   <source
                     src="https://storage.googleapis.com/staging.thach-personal.appspot.com/music-do-wonder-charity.mp4"
                     type="video/mp4"
